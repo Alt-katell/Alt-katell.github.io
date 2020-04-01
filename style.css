@@ -62,9 +62,13 @@ h1 {
 
 /*Container*/
 
+.main{
+  margin-bottom: 100px;
+}
+
 .container {
   width: 80vw;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0 auto;
 }
 
@@ -100,11 +104,49 @@ h3 {
   font-family: 'Dawning of a New Day', cursive;
   font-size: 55px;
   line-height: 55px;
+  font-weight: normal;
   margin-bottom: 20px;
+}
+
+.who-i-am {
+  margin-top: 150px;
+}
+
+.what-i-can-do {
+  text-align: right;
+  margin-top: 80px;
 }
 
 
 /*Footer*/
 
+footer {
+  margin-top: -100px;
+  padding-top: 150px;
+}
 
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 0;
+}
+
+.social {
+  font-size: 35px;
+  margin: 0 28px;
+}
+
+.social:hover {
+  color: #757575;
+}
+
+.footer-copyright {
+  text-align: center;
+  margin: 24px 0 32px 0;
+}
 
