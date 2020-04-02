@@ -6,11 +6,13 @@
 
 /*Body, default*/
 
-body {
+html, body {
   background: white;
   color: black;
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -26,17 +28,18 @@ a {
 /*Navbar*/
 
 #navbar{
+  position: fixed;
+  top: 0;
+  height: 190px;
+  width: 100vw;
+  padding-top: 10px;
+  padding-right: 20px;
+  margin: 0;
+  background: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 75vw;
-  margin: 0 auto;
-  height: 190px;
-  padding-top: 10px;
-  padding-left: 11.5vw;
-  background: white;
-  position: fixed;
-  top: 0;
+  z-index: 1000;
 }
 
 #logo {
@@ -68,6 +71,15 @@ h1 {
 
 .navbar-element {
   position: relative;
+  width: 71px;
+}
+
+.left {
+  margin-left: 12vw;
+}
+
+.right {
+  margin-right: 12vw;
 }
 
 .line {
@@ -196,4 +208,13 @@ footer {
 .footer-copyright {
   text-align: center;
   margin: 24px 0 32px 0;
+}
+
+
+/*Responsive*/
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .navbar-element {
+    display: none;
+  }
 }
