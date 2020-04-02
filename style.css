@@ -29,8 +29,14 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 8.5vw;
-  margin-bottom: 70px;
+  width: 75vw;
+  margin: 0 auto;
+  height: 190px;
+  padding-top: 10px;
+  padding-left: 11.5vw;
+  background: white;
+  position: fixed;
+  top: 0;
 }
 
 #logo {
@@ -60,14 +66,38 @@ h1 {
   padding-bottom: 14px;
 }
 
+.navbar-element {
+  position: relative;
+}
+
+.line {
+  width: 1px;
+  height: 113px;
+  border-left: 4px solid black;
+  position: absolute;
+  top: -449%;
+  left: -19%;
+}
+
+.navbar-element-text {
+  border-bottom: 4px solid white;
+}
+
+.navbar-element-text:hover {
+  border-bottom: 4px solid black;
+}
+
+
 /*Container*/
 
 .main{
+  margin-top: 200px;
   margin-bottom: 100px;
+  padding-top: 120px;
 }
 
 .container {
-  width: 80vw;
+  width: 75vw;
   min-height: 100vh;
   margin: 0 auto;
 }
@@ -149,4 +179,3 @@ footer {
   text-align: center;
   margin: 24px 0 32px 0;
 }
-
