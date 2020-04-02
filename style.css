@@ -79,6 +79,10 @@ h1 {
   left: -19%;
 }
 
+.line-no-display {
+  display: none;
+}
+
 .navbar-element-text {
   border-bottom: 4px solid white;
 }
@@ -145,8 +149,22 @@ h3 {
 .what-i-can-do {
   text-align: right;
   margin-top: 80px;
+  margin-bottom: 120px;
 }
 
+.hire-me {
+  background: black;
+  padding: 16px 40px;
+  border-radius: 4px;
+  margin: 0 auto;
+  display: block;
+}
+
+.hire-me a {
+  color: white;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+}
 
 /*Footer*/
 
