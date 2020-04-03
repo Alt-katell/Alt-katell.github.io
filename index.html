@@ -17,7 +17,7 @@
     <nav id="navbar">
 
       <div class="navbar-element left">
-        <div id="about-line" class="line"></div>
+        <div id="about-line" class="line line-no-display"></div>
         <a href="index.html" class="navbar-element-text">About</a>
       </div>
 
@@ -90,5 +90,16 @@
 
     <p class="footer-copyright">© Katell GOAËR 2020</p>
   </footer>
+
+
+  <script>
+    const currentLocation = location.href;
+    const menuItem = document.querySelectorAll('.navbar-element');
+    menuItem.forEach(item => addLine);
+
+    function addLine(item) {
+      if (item[a].href === currentLocation) item[div].classList.remove('line-no-display');
+    }
+  </script>
 </body>
 </html>
