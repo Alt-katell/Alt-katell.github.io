@@ -66,7 +66,7 @@ h1 {
   font-weight: normal;
   position: absolute;
   top: 36%;
-  left: -11%;
+  left: -15%;
   background: white;
   padding-bottom: 14px;
 }
@@ -125,17 +125,29 @@ h1 {
 
 /*Main content*/
 
-.intro {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+/*All pages*/
 
 h2 {
   font-weight: normal;
   font-size: 30px;
   line-height: 40px;
   margin-bottom: 55px;
+}
+
+h3 {
+  font-family: 'Dawning of a New Day', cursive;
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+/*Index page*/
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .katell {
@@ -148,14 +160,6 @@ h2 {
   height: 300px;
   border-radius: 6px;
   box-shadow: 0px 7px 13px rgba(0, 0, 0, 0.25);
-}
-
-h3 {
-  font-family: 'Dawning of a New Day', cursive;
-  font-size: 55px;
-  line-height: 55px;
-  font-weight: normal;
-  margin-bottom: 20px;
 }
 
 .who-i-am {
@@ -180,6 +184,52 @@ h3 {
 .hire-me a {
   color: white;
   font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+/*Work page*/
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+.project-picture-frame {
+  padding: 40px 10px;
+  box-shadow: 0px 7px 13px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+}
+
+.picture-left .project-picture-frame {
+  margin-right: 30px;
+}
+
+.picture-right .project-picture-frame {
+  margin-left: 30px;
+}
+
+.project-picture {
+  height: 250px;
+  width: auto;
+}
+
+.project-text-button p {
+  font-size: 16px;
+}
+
+.button-project {
+  background: var(--black);
+  padding: 8px 20px;
+  border-radius: 4px;
+  border: none;
+}
+
+.button-project a {
+  color: white;
+  font-size: 16px;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -220,7 +270,71 @@ footer {
 /*Responsive*/
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  .navbar-element {
+
+  /*All pages*/
+
+  /*.navbar-element {
     display: none;
+  }*/
+
+  #logo {
+    position: absolute;
+    top: 10%;
+    right: 2%;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+
+  /*Index page*/
+
+  .katell-picture {
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+  }
+
+  .intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  }
+
+
+  /*Work page*/
+
+  .project-picture {
+    height: 150px;
+    width: auto;
+  }
+}
+
+/*Work page*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
+  .project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 200px;
+  }
+
+  .picture-right {
+    flex-direction: column-reverse;
+  }
+
+  .project-picture-frame {
+    margin-bottom: 30px;
+    padding: 40px 24px;
+  }
+
+  .picture-left .project-picture-frame {
+    margin-right: 0;
+  }
+
+  .picture-right .project-picture-frame {
+    margin-left: 0;
   }
 }
