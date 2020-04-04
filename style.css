@@ -21,12 +21,15 @@ html, body {
 }
 
 
-/*Links, default*/
+/*Links, list default*/
 
 a {
   text-decoration: none !important;
 }
 
+ul {
+  list-style: none;
+}
 
 /*Navbar*/
 
@@ -233,6 +236,36 @@ h3 {
   font-family: 'Raleway', sans-serif;
 }
 
+
+/*Journey page*/
+
+.cv-section .fas {
+  font-size: 28px;
+  margin-right: 12px;
+}
+
+.cv {
+  display: flex;
+  flex-direction: column;
+}
+
+.cv-section {
+  margin-bottom: 100px;
+}
+
+.section-right {
+  text-align: right;
+}
+
+
+
+.skills {
+  display: flex;
+  text-align: right;
+  justify-content: flex-end;
+}
+
+
 /*Footer*/
 
 footer {
@@ -266,6 +299,8 @@ footer {
   margin: 24px 0 32px 0;
 }
 
+
+/*----------------------------------------------------------------------------------------*/
 
 /*Responsive*/
 
