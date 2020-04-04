@@ -18,8 +18,9 @@
 
       <div class="navbar-element left">
         <div class="line line-no-display"></div>
-      </div>
         <a href="index.html" class="navbar-element-text">About</a>
+      </div>
+
 
       <div class="navbar-element">
         <div class="line line-no-display"></div>
@@ -134,6 +135,20 @@
 
     <p class="footer-copyright">© Katell GOAËR 2020</p>
   </footer>
+
+  <script>
+    const currentLocation = location.href;
+    const menuItem = document.querySelectorAll('.navbar-element');
+    menuItem.forEach((item) => {
+      aTag = item.querySelector('a')
+      divTag = item.querySelector('div')
+      if (aTag.href === currentLocation) {
+        divTag.classList.remove('line-no-display');
+      } else {
+        divTag.classList.add('line-no-display');
+      }
+    });
+  </script>
 </body>
 </html>
 

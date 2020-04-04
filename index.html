@@ -95,11 +95,15 @@
   <script>
     const currentLocation = location.href;
     const menuItem = document.querySelectorAll('.navbar-element');
-    menuItem.forEach(item => addLine);
-
-    function addLine(item) {
-      if (item[a].href === currentLocation) item[div].classList.remove('line-no-display');
-    }
+    menuItem.forEach((item) => {
+      aTag = item.querySelector('a')
+      divTag = item.querySelector('div')
+      if (aTag.href === currentLocation) {
+        divTag.classList.remove('line-no-display');
+      } else {
+        divTag.classList.add('line-no-display');
+      }
+    });
   </script>
 </body>
 </html>
