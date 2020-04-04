@@ -318,7 +318,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 200px;
+  margin-bottom: 120px;
   }
 
   .picture-right {
@@ -336,5 +336,10 @@ footer {
 
   .picture-right .project-picture-frame {
     margin-left: 0;
+  }
+
+  .button-project {
+    margin: 20px auto;
+    display: block;
   }
 }
