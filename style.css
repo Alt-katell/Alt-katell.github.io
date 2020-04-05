@@ -6,6 +6,7 @@
 /*Colors*/
 :root {
   --black: #020422;
+  --grey: #5D5b6A;
 }
 
 /*Body, default*/
@@ -101,13 +102,11 @@ h1 {
 }
 
 .navbar-element-text {
-  border-bottom: 4px solid white;
-  color: black;
+  color: var(--black);
 }
 
 .navbar-element-text:hover {
-  border-bottom: 4px solid var(--black);
-  color: black;
+  color: var(--grey);
 }
 
 
@@ -184,6 +183,10 @@ h3 {
   border: none;
 }
 
+.hire-me:hover {
+  background: var(--grey);
+}
+
 .hire-me a {
   color: white;
   font-size: 18px;
@@ -228,6 +231,10 @@ h3 {
   padding: 8px 20px;
   border-radius: 4px;
   border: none;
+}
+
+.button-project:hover {
+  background: var(--grey);
 }
 
 .button-project a {
@@ -294,6 +301,41 @@ h3 {
 }
 
 
+/*Contact page*/
+
+.contact-card {
+  box-shadow: 0px 7px 13px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  padding: 50px;
+  width: 350px;
+  height: 360px;
+  margin: 0 auto;
+}
+
+.contact-info a {
+  color: var(--black);
+}
+
+.contact-info a:hover {
+  color: var(--grey);
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.contact-info p {
+  margin-bottom: 0;
+}
+
+.contact-icon {
+  margin-right: 24px;
+  font-size: 24px;
+}
+
+
 /*Footer*/
 
 footer {
@@ -319,7 +361,7 @@ footer {
 }
 
 .social:hover {
-  color: #757575;
+  color: var(--grey);
 }
 
 .footer-copyright {
@@ -387,6 +429,28 @@ footer {
   .skills-soft {
     margin-right: 0;
     margin-bottom: 20px;
+  }
+
+
+  /*Contact page*/
+
+  .contact-card {
+    padding: 20px;
+    width: 290px;
+    height: 300px;
+    margin: 0 auto;
+  }
+
+  .contact-info a {
+    color: var(--black);
+  }
+
+  .contact-info a:hover {
+    color: #757575;
+  }
+
+  .contact-info {
+    margin: 30px 0;
   }
 }
 

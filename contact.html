@@ -48,7 +48,27 @@
 
   <div class="main">
     <div class="container">
-      <h2>Work in progress :-)</h2>
+      <div class="contact-card">
+        <div class="contact-info">
+          <i class="fas fa-envelope contact-icon"></i>
+          <p>katell.goaer@gmail.com</p>
+        </div>
+
+        <div class="contact-info">
+          <i class="fas fa-mobile-alt contact-icon"></i>
+          <p>+1 (438) 924-9328</p>
+        </div>
+
+        <div class="contact-info">
+          <i class="fab fa-github contact-icon"></i>
+          <a href="https://github.com/Alt-katell" target="_blank">Visit my GitHub</a>
+        </div>
+
+        <div class="contact-info">
+          <i class="fab fa-linkedin-in contact-icon"></i>
+          <a href="https://www.linkedin.com/in/katellgoaer/" target="_blank">Visit my LinkedIn</a>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -67,8 +87,9 @@
     const currentLocation = location.href;
     const menuItem = document.querySelectorAll('.navbar-element');
     menuItem.forEach((item) => {
-      aTag = item.querySelector('a')
-      divTag = item.querySelector('div')
+      aTag = item.querySelector('a');
+      divTag = item.querySelector('div');
+
       if (aTag.href === currentLocation) {
         divTag.classList.remove('line-no-display');
       } else {

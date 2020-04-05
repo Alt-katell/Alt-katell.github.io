@@ -96,8 +96,9 @@
     const currentLocation = location.href;
     const menuItem = document.querySelectorAll('.navbar-element');
     menuItem.forEach((item) => {
-      aTag = item.querySelector('a')
-      divTag = item.querySelector('div')
+      aTag = item.querySelector('a');
+      divTag = item.querySelector('div');
+
       if (aTag.href === currentLocation) {
         divTag.classList.remove('line-no-display');
       } else {
