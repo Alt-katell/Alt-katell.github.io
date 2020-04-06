@@ -370,9 +370,9 @@ footer {
 }
 
 
-/*----------------------------------------------------------------------------------------*/
+/*-RESPONSIVE---------------------------------------------------------------------------------------*/
 
-/*Responsive*/
+/*Responsive for mobile*/
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
@@ -455,9 +455,9 @@ footer {
 }
 
 
+/*Responsive for mobile and tablet*/
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
-
 
   /*Work page*/
 
@@ -488,5 +488,17 @@ footer {
   .button-project {
     margin: 20px auto;
     display: block;
+  }
+}
+
+
+/*Responsive for tablet*/
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+  /*Index page*/
+
+  .katell-picture {
+    margin-left: 50px;
   }
 }
