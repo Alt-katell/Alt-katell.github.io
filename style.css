@@ -410,6 +410,10 @@ footer {
     left: 30px;
   }
 
+  .dropdown-item.active {
+    background: var(--black);
+  }
+
   #mobile-menu #logo {
     position: absolute;
     top: 16%;
@@ -425,8 +429,6 @@ footer {
   }
 
   #mobile-menu #logo h1 {
-
-
     margin: 0;
     font-family: 'Dawning of a New Day', cursive;
     font-size: 41px;
