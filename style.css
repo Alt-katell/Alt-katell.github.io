@@ -34,6 +34,10 @@ ul {
 
 /*Navbar*/
 
+#mobile-menu {
+  display: none;
+}
+
 #navbar{
   position: fixed;
   top: 0;
@@ -378,14 +382,67 @@ footer {
 
   /*All pages*/
 
-  /*.navbar-element {
+  #navbar {
     display: none;
-  }*/
+  }
 
-  #logo {
+  #mobile-menu {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    height: 96px;
+    width: 100vw;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+  }
+
+  .dropdown-toggle::after {
+    display: none;
+  }
+
+  #dropdownMenu i {
+    font-size: 40px;
+    color: var(--black);
     position: absolute;
-    top: 10%;
-    right: 2%;
+    top: 35px;
+    left: 30px;
+  }
+
+  #mobile-menu #logo {
+    position: absolute;
+    top: 16%;
+    right: -6%;
+  }
+
+  #mobile-menu #logo #circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid var(--black);
+    background: white;
+  }
+
+  #mobile-menu #logo h1 {
+
+
+    margin: 0;
+    font-family: 'Dawning of a New Day', cursive;
+    font-size: 41px;
+    line-height: 24px;
+    font-weight: normal;
+    position: absolute;
+    top: 38%;
+    left: -11%;
+    background: white;
+    padding-bottom: 11px;
+  }
+
+  .main{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-top: 95px;
   }
 
   .container {
