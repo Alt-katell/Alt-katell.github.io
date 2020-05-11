@@ -17,7 +17,7 @@
     <nav id="navbar">
 
       <div class="navbar-element left">
-        <div class="line"></div>
+        <div class="line line-no-display"></div>
         <a href="index.html" class="navbar-element-text">About</a>
       </div>
 
@@ -116,9 +116,7 @@
   <script>
     const currentLocation = location.href;
     const menuItem = document.querySelectorAll('.navbar-element');
-    const aboutLine = document.getElementById('about-line');
-
-    const handleClick = menuItem.forEach((item) => {
+    menuItem.forEach((item) => {
       aTag = item.querySelector('a');
       divTag = item.querySelector('div');
 
@@ -128,8 +126,6 @@
         divTag.classList.add('line-no-display');
       }
     });
-
-    menuItem.forEach(item => item.addEventListener("click", handleClick));
   </script>
 
 
