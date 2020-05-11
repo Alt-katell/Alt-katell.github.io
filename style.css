@@ -410,7 +410,7 @@ footer {
     left: 30px;
   }
 
-  .dropdown-item.active {
+  .dropdown-item.active, .about-active.active {
     background: var(--black);
   }
 
