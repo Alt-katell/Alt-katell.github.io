@@ -51,7 +51,7 @@
           <i class="fas fa-bars"></i>
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenu">
-          <a href="index.html" class="dropdown-item active">About</a>
+          <a href="index.html" class="about-active">About</a>
           <a href="work.html" class="dropdown-item">Work</a>
           <a href="journey.html" class="dropdown-item">Journey</a>
           <a href="contact.html" class="dropdown-item">Contact</a>
@@ -140,6 +140,13 @@
   <script>
     const mobileCurrentLocation = location.href;
     const mobileMenuItem = document.querySelectorAll('.dropdown-item');
+
+    const aboutActive = document.querySelector('.about-active');
+
+    if (mobileCurrentLocation === 'https://alt-katell.github.io/' || mobileCurrentLocation === 'https://alt-katell.github.io/index.html') {
+      aboutActive.classList.add('active');
+    }
+
     mobileMenuItem.forEach((item) => {
       if (item.href === mobileCurrentLocation) {
         item.classList.add('active');
