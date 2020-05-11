@@ -17,7 +17,7 @@
     <nav id="navbar">
 
       <div class="navbar-element left">
-        <div id="about-line" class="line line-no-display"></div>
+        <div class="line"></div>
         <a href="index.html" class="navbar-element-text">About</a>
       </div>
 
@@ -118,13 +118,9 @@
     const menuItem = document.querySelectorAll('.navbar-element');
     const aboutLine = document.getElementById('about-line');
 
-    console.log(window.location.href)
+    menuItem.addEventListener("click", handleClick);
 
-    if (window.location.href === 'https://alt-katell.github.io/') {
-      aboutLine.classList.remove('line-no-display');
-    }
-
-    menuItem.forEach((item) => {
+    const handleClick = menuItem.forEach((item) => {
       aTag = item.querySelector('a');
       divTag = item.querySelector('div');
 
