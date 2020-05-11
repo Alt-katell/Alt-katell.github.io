@@ -17,7 +17,7 @@
     <nav id="navbar">
 
       <div class="navbar-element left">
-        <div class="line"></div>
+        <div class="line line-no-display"></div>
         <a href="index.html" class="navbar-element-text">About</a>
       </div>
 
@@ -120,7 +120,7 @@
       aTag = item.querySelector('a');
       divTag = item.querySelector('div');
 
-      if (aTag.href === currentLocation) {
+      if (aTag.href === currentLocation || currentLocation === "https://alt-katell.github.io/") {
         divTag.classList.remove('line-no-display');
       } else {
         divTag.classList.add('line-no-display');
