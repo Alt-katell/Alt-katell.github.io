@@ -114,6 +114,7 @@
 
   <!-- Script for black left line on navbar for desktop and tablet -->
   <script>
+    console.log(location.href);
     const currentLocation = location.href;
     const menuItem = document.querySelectorAll('.navbar-element');
     const aboutLine = document.getElementById('about-line');
@@ -125,6 +126,7 @@
     menuItem.forEach((item) => {
       aTag = item.querySelector('a');
       divTag = item.querySelector('div');
+      console.log(aTag.href);
 
       if (aTag.href === currentLocation) {
         divTag.classList.remove('line-no-display');
