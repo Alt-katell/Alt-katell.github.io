@@ -79,7 +79,7 @@ h1 {
   padding-bottom: 14px;
 }
 
-.navbar-element {
+.navbar-element, .navbar-about {
   position: relative;
   width: 71px;
 }

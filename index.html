@@ -16,8 +16,8 @@
   <header>
     <nav id="navbar">
 
-      <div class="navbar-element left">
-        <div class="line line-no-display"></div>
+      <div class="navbar-about left">
+        <div class="about-line line line-no-display"></div>
         <a href="index.html" class="navbar-element-text">About</a>
       </div>
 
@@ -116,6 +116,13 @@
   <script>
     const currentLocation = location.href;
     const menuItem = document.querySelectorAll('.navbar-element');
+
+    const aboutLine = document.querySelector('.about-line');
+
+    if (currentLocation === 'https://alt-katell.github.io/' || currentLocation === 'https://alt-katell.github.io/index.html') {
+      aboutLine.classList.remove('line-no-display');
+    }
+
     menuItem.forEach((item) => {
       aTag = item.querySelector('a');
       divTag = item.querySelector('div');
