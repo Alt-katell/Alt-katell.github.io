@@ -118,8 +118,6 @@
     const menuItem = document.querySelectorAll('.navbar-element');
     const aboutLine = document.getElementById('about-line');
 
-    menuItem.addEventListener("click", handleClick);
-
     const handleClick = menuItem.forEach((item) => {
       aTag = item.querySelector('a');
       divTag = item.querySelector('div');
@@ -130,6 +128,8 @@
         divTag.classList.add('line-no-display');
       }
     });
+
+    menuItem.forEach(item => item.addEventListener("click", handleClick));
   </script>
 
 
