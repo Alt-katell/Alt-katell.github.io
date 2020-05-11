@@ -114,19 +114,19 @@
 
   <!-- Script for black left line on navbar for desktop and tablet -->
   <script>
-    console.log(location.href);
     const currentLocation = location.href;
     const menuItem = document.querySelectorAll('.navbar-element');
     const aboutLine = document.getElementById('about-line');
 
-    if (currentLocation === 'https://alt-katell.github.io/') {
+    console.log(window.location.href)
+
+    if (window.location.href === 'https://alt-katell.github.io/') {
       aboutLine.classList.remove('line-no-display');
     }
 
     menuItem.forEach((item) => {
       aTag = item.querySelector('a');
       divTag = item.querySelector('div');
-      console.log(aTag.href);
 
       if (aTag.href === currentLocation) {
         divTag.classList.remove('line-no-display');
