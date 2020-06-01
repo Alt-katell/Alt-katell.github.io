@@ -52,31 +52,9 @@ ul {
   z-index: 1000;
 }
 
-#logo {
-  position: relative;
-  width: 202px;
-  margin-left: 22px;
-}
-
-#circle {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  border: 5px solid var(--black);
-  background: white;
-}
-
-h1 {
-  margin: 0;
-  font-family: 'Dawning of a New Day', cursive;
-  font-size: 55px;
-  line-height: 32px;
-  font-weight: normal;
-  position: absolute;
-  top: 36%;
-  left: -15%;
-  background: white;
-  padding-bottom: 14px;
+#logo img {
+  width: 230px;
+  height: auto;
 }
 
 .navbar-element, .navbar-about {
@@ -417,28 +395,13 @@ footer {
   #mobile-menu #logo {
     position: absolute;
     top: 16%;
-    right: -6%;
+    right: 6%;
   }
 
-  #mobile-menu #logo #circle {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 5px solid var(--black);
-    background: white;
-  }
+  #logo img {
 
-  #mobile-menu #logo h1 {
-    margin: 0;
-    font-family: 'Dawning of a New Day', cursive;
-    font-size: 41px;
-    line-height: 24px;
-    font-weight: normal;
-    position: absolute;
-    top: 38%;
-    left: -11%;
-    background: white;
-    padding-bottom: 11px;
+    height: 80px;
+    width: auto;
   }
 
   .main{
