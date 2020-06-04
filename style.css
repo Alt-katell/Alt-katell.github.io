@@ -21,9 +21,6 @@ html, body {
   box-sizing: border-box;
 }
 
-
-/*Links, list default*/
-
 a {
   text-decoration: none !important;
 }
@@ -31,6 +28,7 @@ a {
 ul {
   list-style: none;
 }
+
 
 /*Navbar*/
 
