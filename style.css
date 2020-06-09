@@ -202,25 +202,53 @@ h3 {
   width: auto;
 }
 
-.project-text-button p {
+.project-text p {
   font-size: 16px;
 }
 
-.button-project {
-  background: var(--black);
+.visit-site-button,
+.see-code-button {
   padding: 8px 20px;
   border-radius: 4px;
-  border: none;
 }
 
-.button-project:hover {
+.visit-site-button {
+  background: var(--black);
+  border: 1px solid var(--black);
+}
+
+.see-code-button {
+  background: white;
+  border: 1px solid var(--black);
+  margin-left: 16px;
+}
+
+.visit-site-button:hover,
+.see-code-button:hover {
   background: var(--grey);
+  border: 1px solid var(--grey);
 }
 
-.button-project a {
-  color: white;
+.visit-site-button a,
+.see-code-button a {
   font-size: 16px;
   font-family: 'Raleway', sans-serif;
+}
+
+.visit-site-button a {
+  color: white;
+}
+
+.see-code-button a {
+  color: var(--black);
+}
+
+.see-code-button a:hover {
+  color: white;
+}
+
+.fa-github-alt {
+  margin-right: 8px;
 }
 
 
