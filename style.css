@@ -464,6 +464,18 @@ footer {
     width: auto;
   }
 
+  .buttons {
+    width: 70%;
+    display: flex;
+    flex-flow: column;
+    margin: 24px auto 0 auto;
+  }
+
+  .see-code-button {
+    margin-top: 16px;
+    margin-left: 0;
+  }
+
 
   /*Journey page*/
 
