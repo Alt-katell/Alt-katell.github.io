@@ -481,20 +481,6 @@ footer {
 
   /*Work page*/
 
-  .project-picture {
-    height: 200px;
-    width: auto;
-    margin: 0 0 30px 0;
-  }
-
-  .picture-left .project-picture {
-    margin-right: 0px;
-  }
-
-  .picture-right .project-picture {
-    margin-left: 0px;
-  }
-
   .buttons {
     width: 70%;
     display: flex;
@@ -505,6 +491,14 @@ footer {
   .see-code-button {
     margin-top: 16px;
     margin-left: 0;
+  }
+
+  .project-text {
+    width: 88%;
+  }
+
+  .stack-list {
+    flex-wrap: wrap;
   }
 
 
@@ -563,17 +557,18 @@ footer {
     flex-direction: column-reverse;
   }
 
-  .project-picture-frame {
-    margin-bottom: 30px;
-    padding: 40px 24px;
+  .project-picture {
+    height: 200px;
+    width: auto;
+    margin: 0 0 30px 0;
   }
 
-  .picture-left .project-picture-frame {
-    margin-right: 0;
+  .picture-left .project-picture {
+    margin-right: 0px;
   }
 
-  .picture-right .project-picture-frame {
-    margin-left: 0;
+  .picture-right .project-picture {
+    margin-left: 0px;
   }
 
   .button-project {
