@@ -161,6 +161,7 @@ h3 {
   margin: 0 auto;
   display: block;
   border: none;
+  transition: 0.3;
 }
 
 .hire-me:hover {
@@ -206,6 +207,7 @@ h3 {
 .see-code-button {
   padding: 8px 20px;
   border-radius: 4px;
+  transition: 0.3;
 }
 
 .visit-site-button {
@@ -362,6 +364,7 @@ footer {
   font-size: 35px;
   margin: 0 28px;
   color: var(--black);
+  transition: 0.3;
 }
 
 .social:hover {
