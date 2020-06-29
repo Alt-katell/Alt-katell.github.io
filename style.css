@@ -456,8 +456,17 @@ footer {
   /*Work page*/
 
   .project-picture {
-    height: 150px;
+    height: 200px;
     width: auto;
+    margin: 0 0 30px 0;
+  }
+
+  .picture-left .project-picture {
+    margin-right: 0px;
+  }
+
+  .picture-right .project-picture {
+    margin-left: 0px;
   }
 
   .buttons {
