@@ -154,6 +154,24 @@ h3 {
   margin-bottom: 120px;
 }
 
+.stack-and-tools {
+  margin-bottom: 70px;
+}
+
+.stack-and-tools .stack-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-stack-list {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.sub-stack-list .stack {
+  margin-right: 40px;
+}
+
 .hire-me {
   background: var(--black);
   padding: 16px 40px;
@@ -543,6 +561,12 @@ footer {
 /*Responsive for mobile and tablet*/
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
+
+  /*index page*/
+  .stack-and-tools .stack-list .sub-stack-list {
+    flex-wrap: wrap;
+  }
+
 
   /*Work page*/
 
