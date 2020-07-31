@@ -355,7 +355,6 @@ h3 {
   border-radius: 6px;
   padding: 50px;
   width: 350px;
-  height: 360px;
   margin: 0 auto;
 }
 
@@ -370,7 +369,11 @@ h3 {
 .contact-info {
   display: flex;
   align-items: center;
-  margin: 30px 0;
+  margin-bottom: 30px;
+}
+
+.contact-info:last-of-type {
+  margin-bottom: 0;
 }
 
 .contact-info p {
@@ -408,6 +411,10 @@ footer {
   transition: 0.3;
 }
 
+.footer-links li:last-of-type .social{
+  font-size: 30px;
+}
+
 .social:hover {
   color: var(--grey);
 }
@@ -418,7 +425,7 @@ footer {
 }
 
 
-/*-RESPONSIVE---------------------------------------------------------------------------------------*/
+/*-RESPONSIVE---------------------------------------------------------------------------------------
 
 /*Responsive for mobile*/
 
@@ -478,6 +485,14 @@ footer {
 
   .container {
     width: 90%;
+  }
+
+  .footer-links li a {
+    font-size: 26px;
+  }
+
+  .footer-links li:last-of-type .social{
+    font-size: 24px;
   }
 
 
@@ -540,7 +555,6 @@ footer {
   .contact-card {
     padding: 20px;
     width: 290px;
-    height: 300px;
     margin: 0 auto;
   }
 
@@ -553,7 +567,7 @@ footer {
   }
 
   .contact-info {
-    margin: 30px 0;
+    margin-bottom: 30px;
   }
 }
 
