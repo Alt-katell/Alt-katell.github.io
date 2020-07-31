@@ -172,6 +172,10 @@ h3 {
   margin-right: 40px;
 }
 
+.sub-stack-list .stack:last-of-type {
+  margin-right: 0;
+}
+
 .hire-me {
   background: var(--black);
   padding: 16px 40px;
