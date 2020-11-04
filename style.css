@@ -533,8 +533,8 @@ footer {
   }
 
   .stack-list {
-    flex-wrap: wrap;
-  }
+      flex-wrap: wrap;
+    }
 
 
   /*Journey page*/
@@ -579,10 +579,13 @@ footer {
 @media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
 
   /*index page*/
-  .stack-and-tools .stack-list .sub-stack-list {
+  .stack-and-tools .stack-list {
     flex-wrap: wrap;
   }
 
+  .stack-and-tools .stack-list .stack {
+    margin-bottom: 30px;
+  }
 
   /*Work page*/
 
