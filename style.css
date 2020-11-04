@@ -155,24 +155,22 @@ h3 {
 }
 
 .stack-and-tools {
-  margin-bottom: 70px;
+  margin-bottom: 150px;
 }
 
-.stack-and-tools .stack-list {
+.stack-list {
   display: flex;
-  flex-direction: column;
 }
 
-.sub-stack-list {
-  display: flex;
-  margin-bottom: 30px;
+.stack-and-tools .stack {
+  margin-right: 38px;
 }
 
-.sub-stack-list .stack {
-  margin-right: 40px;
+.stack-and-tools .stack .tech-name {
+  margin-bottom: 0;
 }
 
-.sub-stack-list .stack:last-of-type {
+.stack:last-of-type {
   margin-right: 0;
 }
 
